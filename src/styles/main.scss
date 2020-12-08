@@ -1,0 +1,24 @@
+@import "./nav";
+@import "./homeContent";
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-splitter{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+}
+
+.main-content{
+    height: 100vh;
+    flex-basis: 85%;
+    background-color: royalblue;
+}
+
+
+
