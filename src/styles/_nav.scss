@@ -1,7 +1,69 @@
 $bg : #3E3E3E;
+$btnActive: #9A80C8;
+$btnInactive: #2A2A2A;
 
 nav{
     height: 100vh;
-    flex-basis: 15%;
+    flex-basis: 10%;
     background-color: $bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    div{
+        width: 100%;
+        height: 100px;
+    }
+
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    background-color: $btnInactive;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    padding: 0;
+
+
+    &:focus{
+        outline-style: none;
+        //background-color: $btnActive;
+    }
+
+    &:hover{
+        border: 1px solid royalblue;
+    }
+}
+
+.activeBtn{
+    background-color: $btnActive;
+}
+
+#home{
+    background-image: url(../assets/imgs/home-white-18dp.svg);
+}
+
+#menu{
+    background-image: url(../assets/imgs/menu_book-white-18dp.svg);
+}
+
+#logo{
+    margin-top: 40px;
+    width: 100px ;
+    height: 65px;
+    margin-bottom: 100px;
+    background: url(../assets/imgs/Logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
 }

@@ -1,7 +1,8 @@
 @import "./nav";
 @import "./homeContent";
+@import "./menuContent";
 
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,8 +17,8 @@ body{
 
 .main-content{
     height: 100vh;
-    flex-basis: 85%;
-    background-color: royalblue;
+    width: 100%;
+    flex-basis: 90%;
 }
 
 
