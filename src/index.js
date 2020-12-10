@@ -2,6 +2,7 @@ import "./styles/main.scss";
 import navBar from "./js/nav.js";
 import loadHome from "./js/home.js";
 import loadMenu from "./js/menu.js";
+import loadContact from "./js/contact.js"
 
 
 
@@ -16,6 +17,7 @@ const createContentSplitter = () => {
 const updateBtn = () => {
     let homeBtn = document.querySelector('#home');
     let menuBtn = document.querySelector('#menu');
+    let contactBtn = document.querySelector('#contact');
 
     menuBtn.addEventListener('click', () => {
         loadPage('menu');
@@ -23,6 +25,10 @@ const updateBtn = () => {
 
     homeBtn.addEventListener('click', () => {
         loadPage('home');
+    });
+
+    contactBtn.addEventListener('click', () => {
+        loadPage('contact');
     });
 }
 
@@ -32,13 +38,24 @@ const loadPage = (page) => {
         contentDiv.firstElementChild.remove();
     }
     createContentSplitter()
-    if(page === "home"){
-        navBar.loadnav(page);
-        loadHome();
-    }else{
-        navBar.loadnav(page);
-        loadMenu();
+
+    switch (page) {
+        case 'home':
+            navBar.loadnav(page);
+            loadHome();
+            break;
+        case 'menu':
+            navBar.loadnav(page);
+            loadMenu();
+            break;
+        case 'contact':
+            navBar.loadnav(page);
+            loadContact();
+            break;
+        default:
+            break;
     }
+
     updateBtn();
 }
 

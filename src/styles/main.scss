@@ -1,12 +1,20 @@
 @import "./nav";
 @import "./homeContent";
 @import "./menuContent";
+@import "./contact";
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+h1{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+}
+
 
 .content-splitter{
     width: 100vw;

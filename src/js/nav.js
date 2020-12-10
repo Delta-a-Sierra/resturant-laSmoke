@@ -12,6 +12,11 @@ const navBar = (() => {
         name : "menu",
         img : "./assets/imgs/menu_book-white-18dp.svg",
         isActive : false        
+    },
+    {
+        name : "contact",
+        img : "./assets/imgs/menu_book-white-18dp.svg",
+        isActive : false        
     }]
 
     const createNav = () => {

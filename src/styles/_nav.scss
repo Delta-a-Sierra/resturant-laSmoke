@@ -2,6 +2,12 @@ $bg : #3E3E3E;
 $btnActive: #9A80C8;
 $btnInactive: #2A2A2A;
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav{
     height: 100vh;
     flex-basis: 10%;
@@ -14,12 +20,7 @@ nav{
 
     div{
         width: 100%;
-        height: 100px;
-    }
-
-    img{
-        width: 50px;
-        height: 50px;
+        height: 10%;
     }
 }
 
@@ -30,13 +31,12 @@ button{
     border: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40px;
+    background-size: 3rem;
     padding: 0;
 
 
     &:focus{
         outline-style: none;
-        //background-color: $btnActive;
     }
 
     &:hover{
@@ -56,11 +56,15 @@ button{
     background-image: url(../assets/imgs/menu_book-white-18dp.svg);
 }
 
+#contact{
+    background-image: url(../assets/imgs/contact_page-white-18dp.svg);
+}
+
 #logo{
-    margin-top: 40px;
-    width: 100px ;
-    height: 65px;
-    margin-bottom: 100px;
+    margin-top: 2rem;
+    width: 6rem ;
+    height: 5rem;
+    margin-bottom: 6rem;
     background: url(../assets/imgs/Logo.png);
     background-size: contain;
     background-position: center;
